@@ -1,0 +1,32 @@
+.products {
+  order: 4;
+
+  @media (min-width: @laptop-width) {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+}
+
+.products__title {
+  margin: 0;
+  padding: 40px 0 16px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+
+  @media (min-width: @laptop-width) {
+    padding: 490px 0 5px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.products__list {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 24px;
+
+  @media (min-width: @laptop-width) {
+    padding-right: 50px;
+  }
+}
