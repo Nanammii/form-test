@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body container">
+<header class="main-header">
+  <a class="main-header__logo" href="#">
+    <picture>
+      <source media="(min-width: 1024px)" srcset="img/logo-desktop.svg">
+      <img class="main-header__logo-image" src="img/logo.svg" alt="Лого">
+    </picture>
+  </a>
+  <nav class="main-navigation">
+    <button class="main-navigation__toggle main-navigation__toggle--closed" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-navigation__wrapper">
+      <ul class="main-navigation__list user-list">
+        <li class="user-list__item user-list__item--search">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon user-list__icon--search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.7778 20.5555C16.1779 20.5555 20.5555 16.1779 20.5555 10.7778C20.5555 5.37765 16.1779 1 10.7778 1C5.37765 1 1 5.37765 1 10.7778C1 16.1779 5.37765 20.5555 10.7778 20.5555Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22.9998 22.9999L17.6831 17.6833" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <div class="user-list__input-wrap user-list__input-wrap--visible">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="user-list__input" type="text" name="search" id="search" placeholder="Поиск">
+          </div>
+        </li>
+        <li class="user-list__item user-list__item--login user-list__item--visible">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon user-list__icon--login" width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23 26V23.2222C23 21.7488 22.4205 20.3357 21.3891 19.2939C20.3576 18.252 18.9587 17.6667 17.5 17.6667H6.5C5.04131 17.6667 3.64236 18.252 2.61091 19.2939C1.57946 20.3357 1 21.7488 1 23.2222V26"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                d="M12 12.1111C15.0376 12.1111 17.5 9.6238 17.5 6.55556C17.5 3.48731 15.0376 1 12 1C8.96243 1 6.5 3.48731 6.5 6.55556C6.5 9.6238 8.96243 12.1111 12 12.1111Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="visually-hidden">Вход</span>
+          </a>
+        </li>
+        <li class="user-list__item user-list__item--likes">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon user-list__icon--likes" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.1494 2.94496C22.5629 2.32835 21.8667 1.83921 21.1003 1.50549C20.334 1.17177 19.5126 1 18.6831 1C17.8535 1 17.0321 1.17177 16.2658 1.50549C15.4994 1.83921 14.8032 2.32835 14.2167 2.94496L12.9997 4.22404L11.7826 2.94496C10.5981 1.70004 8.99152 1.00065 7.31633 1.00065C5.64114 1.00065 4.03455 1.70004 2.85001 2.94496C1.66547 4.18988 1 5.87836 1 7.63895C1 9.39954 1.66547 11.088 2.85001 12.3329L4.06705 13.612L12.9997 23L21.9323 13.612L23.1494 12.3329C23.7361 11.7166 24.2015 10.9849 24.519 10.1794C24.8366 9.37403 25 8.51076 25 7.63895C25 6.76714 24.8366 5.90387 24.519 5.09846C24.2015 4.29305 23.7361 3.56128 23.1494 2.94496V2.94496Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="user-list__item user-list__item--cart">
+          <a class="user-list__link" href="#">
+            <svg class="user-list__icon user-list__icon--cart" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.33333 1L1 5.4V20.8C1 21.3835 1.23413 21.9431 1.65087 22.3556C2.06762 22.7682 2.63285 23 3.22222 23H18.7778C19.3671 23 19.9324 22.7682 20.3491 22.3556C20.7659 21.9431 21 21.3835 21 20.8V5.4L17.6667 1H4.33333Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 5.39996H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                d="M15.4448 9.79993C15.4448 10.9669 14.9765 12.086 14.1431 12.9112C13.3096 13.7364 12.1791 14.1999 11.0004 14.1999C9.82161 14.1999 8.69115 13.7364 7.85766 12.9112C7.02416 12.086 6.55591 10.9669 6.55591 9.79993"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="visually-hidden">Корзина</span>
+          </a>
+          <span class="user-list__number-goods">4</span>
+        </li>
+      </ul>
+      <ul class="main-navigation__list site-list site-list--visible">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Страница 1</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Страница 2</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Страница 3</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Страница 4</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Страница 5</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Страница 6</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="main-container">
+  <h1 class="main-container__title">Корзина</h1>
+  <section class="breadcrumbs">
+    <h2 class="visually-hidden">Навигация</h2>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link breadcrumbs__link--current">Корзина</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="registration">
+    <span class="registration__sign-in">Есть аккаунт?
+      <a class="registration__link" href="#">Войти</a>
+    </span>
+
+    <iframe class="registration__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.0025704214652!2d30.428102516022637!3d60.031610181910054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963339410d08ff%3A0x43ff59d8937be730!2z0L_RgC4g0J_RgNC-0YHQstC10YnQtdC90LjRjywgOTksINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTUyOTk!5e0!3m2!1sru!2sru!4v1665473125948!5m2!1sru!2sru"
+      width="287" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <form class="registration__form" action="#" method="post" id="data">
+      <div class="registration__field-group registration__field-group--address field-group">
+        <label class="field-group__form-label field-group__form-label--address" for="address">Адрес</label>
+        <input class="field-group__form-input" type="text" name="address" id="address" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required>
+      </div>
+      <div class="registration__wrapper">
+        <div class="registration__field-group registration__field-group--column field-group">
+        <label class="visually-hidden" for="name">Имя</label>
+        <input class="field-group__form-input" type="text" name="name" id="name" placeholder="Ваше Имя" required>
+      </div>
+        <div class="registration__field-group registration__field-group--column field-group">
+        <label class="visually-hidden" for="phone">Контактный телефон</label>
+        <input class="field-group__form-input" type="tel" name="phone" id="phone" placeholder="Ваш Телефон" required>
+      </div>
+      </div>
+      <div class="registration__field-group field-group">
+        <label class="visually-hidden" for="email">Электронная почта</label>
+        <input class="field-group__form-input" type="email" name="email" id="email" placeholder="Ваш Email" required>
+      </div>
+      <select class="registration__field-group field-group field-group--select" id="package" required>
+        <option class="field-group__option" value="">Тип упаковки</option>
+        <option class="field-group__option" value="1">без упаковки</option>
+        <option class="field-group__option" value="2">стандартная</option>
+        <option class="field-group__option" value="3">подарочная</option>
+      </select>
+      <div class="registration__field-group field-group">
+        <label class="visually-hidden" for="comment">Комментарий</label>
+        <input class="field-group__form-input" type="text" name="comment" id="comment" placeholder="Введите комментарий" required>
+      </div>
+    </form>
+  </section>
+
+  <section class="products">
+    <h2 class="products__title">Выбранные товары:</h2>
+    <ul class="products__list goods" >
+      <li class="goods__item">
+        <picture class="goods__picture">
+          <source media="(min-width: 1120px)" srcset="img/product-photo-desktop.jpg">
+          <img class="goods__image" src="img/product-photo.jpg" alt="Фото товара">
+        </picture>
+        <h3 class="goods__title">Товар 1</h3>
+        <p class="goods__description goods__description--visible">Описание товара, которое может быть длинным</p>
+        <div class="goods__field-group field-group">
+          <label class="visually-hidden" for="number">Количество товаров</label>
+          <button class="field-group__button field-group__button--minus button">
+            <span class="visually-hidden">Уменьшить количество товаров.</span>
+            <svg class="field-group__icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1" x2="12" y2="1" stroke-width="2"/>
+            </svg>
+          </button>
+          <input class="field-group__form-input field-group__form-input--goods" type="number" id="number" name="number" value="1">
+          <button class="field-group__button field-group__button--plus button">
+            <span class="visually-hidden">Увеличить количество товаров.</span>
+            <svg class="field-group__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="12" y2="6" stroke-width="2"/>
+              <line x1="6" y1="12" x2="6" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+        <span class="goods__price">1090 руб.</span>
+        <button class="goods__link button" type="button">Удалить</button>
+      </li>
+      <li class="goods__item">
+        <picture class="goods__picture">
+          <source media="(min-width: 1120px)" srcset="img/product-photo-desktop.jpg">
+          <img class="goods__image" src="img/product-photo.jpg" alt="Фото товара">
+        </picture>
+        <h3 class="goods__title">Товар 2</h3>
+        <p class="goods__description goods__description--visible">Описание товара, которое может быть очень-очень длинным</p>
+        <div class="goods__field-group field-group">
+          <label class="visually-hidden" for="number2">Количество товаров</label>
+          <button class="field-group__button field-group__button--minus button">
+            <span class="visually-hidden">Уменьшить количество товаров.</span>
+            <svg class="field-group__icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1" x2="12" y2="1" stroke-width="2"/>
+            </svg>
+          </button>
+          <input class="field-group__form-input field-group__form-input--goods" type="number" id="number2" name="number" value="1">
+          <button class="field-group__button field-group__button--plus button">
+            <span class="visually-hidden">Увеличить количество товаров.</span>
+            <svg class="field-group__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="12" y2="6" stroke-width="2"/>
+              <line x1="6" y1="12" x2="6" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+        <span class="goods__price">700 руб.</span>
+        <button class="goods__link button" type="button">Удалить</button>
+      </li>
+      <li class="goods__item">
+        <picture class="goods__picture">
+          <source media="(min-width: 1120px)" srcset="img/product-photo-desktop.jpg">
+          <img class="goods__image" src="img/product-photo.jpg" alt="Фото товара">
+        </picture>
+        <h3 class="goods__title">Товар 3</h3>
+        <p class="goods__description goods__description--visible">Короткое описание товара</p>
+        <div class="goods__field-group field-group">
+          <label class="visually-hidden" for="number3">Количество товаров</label>
+          <button class="field-group__button field-group__button--minus button">
+            <span class="visually-hidden">Уменьшить количество товаров.</span>
+            <svg class="field-group__icon" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="1" x2="12" y2="1" stroke-width="2"/>
+            </svg>
+          </button>
+          <input class="field-group__form-input field-group__form-input--goods" type="number" id="number3" name="number" value="2">
+          <button class="field-group__button field-group__button--plus button">
+            <span class="visually-hidden">Увеличить количество товаров.</span>
+            <svg class="field-group__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="6" x2="12" y2="6" stroke-width="2"/>
+              <line x1="6" y1="12" x2="6" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+        <span class="goods__price">2000 руб.</span>
+        <button class="goods__link button" type="button">Удалить</button>
+      </li>
+    </ul>
+  </section>
+
+  <div class="total-order">
+    <span class="total-order__text">Итог:</span>
+    <span class="total-order__number">3790 руб.</span>
+  </div>
+  <button class="main-container__button button" type="submit" form="data">Купить</button>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

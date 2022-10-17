@@ -1,0 +1,20 @@
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 648px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @laptop-width) {
+    min-width: 824px;
+    padding: 0 100px;
+    max-width: 1110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 405px;
+    max-width: 1110px;
+  }
+}
