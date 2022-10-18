@@ -16,3 +16,6 @@
 При отправке формы должен происходить сбор информации со всех полей в объект FormData.  
 Собранные данные необходимо вывести в console.log().
 
+[Demo preview](https://nanammii.github.io/form-test/)
+
+
